@@ -102,6 +102,53 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+#content{width:100px; height:100px;border:1px solid black; position: relative;}
+.topright{position:absolute; top:5x;right:5px; text-align:right;}
+
+
+
+
 </style>
 
 
@@ -120,6 +167,7 @@ img {vertical-align: middle;}
     <!-- header -->
     <header>
         <!-- header inner -->
+
         <div class="header">
 
             <div class="container">
@@ -133,16 +181,21 @@ img {vertical-align: middle;}
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-15 col-lg-15 col-md-15 col-sm-9">
-                        <div class="location_icon_bottum_tt">
-                            <ul>
-				<li>Login</li>
-				<li><img src="icon/email1.png" />Register</li>
-                                <li><img src="icon/call1.png" />Contact Us</li>
+		    <li><font size="5">Mediating Multilingualism</font></a></li>
+                    <!---<div class="col-xl-15 col-lg-15 col-md-15 col-sm-9">
+                        <div class="location_icon_bottum_tt">--->
+			     <ul>
+                           <div class="topright"><img src="icon/email1.png" /><a href="index.html">Register</div>
                             </ul>
-                        </div>
-                    </div>
+                       <!-- </div>
+                    </div>--->
                 </div>
+
+
+
+
+
+
                 <div class="row">
                     <div class="col-md-12 location_icon_bottum">
                        <div class="row">
@@ -151,14 +204,52 @@ img {vertical-align: middle;}
                                     <div class="limit-box">
                                         <nav class="main-menu">
                                             <ul class="menu-area-main">
-                                                <li class="active"> <a href="index.html">Home</a> </li>
+                                                <!---<li class="active"> <a href="index.html">Home</a> </li>
                                                 <li> <a href="#">About</a> </li>
-                                                <li><a href="#">Resources</a></li>
-                                                <li><a href="maps.html">Maps</a></li>
+						<li><a href="maps.html">Maps</a></li>
                                                 <li><a href="#">Events</a></li>
-						<li><a href="#">Links</a></li>
-						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Resources</a></li>
+                                                <li><a href="resources.html">Resources</a></li>--->
+					
+						<button onclick="myFunction()" class="dropbtn"><a href="#home">Home</button></a>
 
+						<div class="dropdown">
+  						<button onclick="myFunction()" class="dropbtn">About</button>
+  						<div id="myDropdown" class="dropdown-content">
+   						 <a href="#home">Our Mission</a>
+   						 <a href="#about">Meet the Team</a>
+   						 <a href="#contact">Why It Matters</a>
+						 <a href="#contact">Partners</a>
+  						</div>
+						</div>
+					
+						<!---<div class="dropdown">
+  						<button onclick="myFunction()" class="dropbtn">Resources</button>
+  						<div id="myDropdown" class="dropdown-content">
+   						 <a href="#home">Bibliography</a>
+   						 <a href="#about">Dictionaries</a>
+   						 <a href="#contact">Terminology</a>
+						 <a href="#contact">Audio & Vedio</a>
+						 <a href="#contact">Still Photo</a>
+  						</div>
+						</div>
+
+						<div class="dropdown">
+  						<button onclick="myFunction()" class="dropbtn">Maps</button>
+  						<div id="myDropdown" class="dropdown-content">
+   						 <a href="#home">State and Languages</a>
+   						 <a href="#about">Endangered Language Map</a>
+   						 <a href="#contact">Languages with Colour Cods</a>
+						 <a href="#contact">Statistics</a>
+						 </div>
+						</div>--->
+						<button onclick="myFunction()" class="dropbtn"><a href="#home">Resources</button></a>
+						<button onclick="myFunction()" class="dropbtn"><a href=maps.html>Maps</button></a>
+						<button onclick="myFunction()" class="dropbtn"><a href="#home">Events</button></a>
+						<button onclick="myFunction()" class="dropbtn"><a href="#home">Links</button></a>
+						<button onclick="myFunction()" class="dropbtn"><a href="#home">FAQ</button></a>
+						
+					
                                             </ul>
                                         </nav>
                                     </div>
@@ -191,13 +282,13 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 23</div>
-  <img src="images/1.JPG" style="width:50%">
+  <img src="photos/1.JPG" style="width:50%">
 
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 23</div>
-  <img src="images/2.JPG" style="width:50%">
+  <img src="photos/2.JPG" style="width:50%">
 
 <!----<div class="container">
                         <div class="carousel-caption relative">
@@ -215,13 +306,13 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 23</div>
-  <img src="images/3.JPG" style="width:50%">
+  <img src="photos/3.JPG" style="width:50%">
 
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 23</div>
-  <img src="images/4.JPG" style="width:50%">
+  <img src="photos/4.JPG" style="width:50%">
 </div>
 
 <div class="mySlides fade">
@@ -429,6 +520,30 @@ function showSlides() {
   setTimeout(showSlides, 10000); // Change image every 2 seconds
 }
 </script>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
 
 </section>
 
